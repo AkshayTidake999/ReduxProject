@@ -1,38 +1,172 @@
-.App {
+.image img {
+  height: 100px;
+}
+
+.child{
+  height: 3700px;
+}
+button {
+  background: #36D1DC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family: 'Times New Roman', Times, serif;
+  height: 40px;
+  font-weight: bold;
+  font-size: 15px;
+  width: 150px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  box-shadow: 10px 10px 10px rgb(152, 152, 170);
+}
+
+
+.cartItem img {
+  height: 48px;
+  width: 54px;
+  position: absolute;
+  top: 8px;
+  right: 12px;
+}
+
+.cartlength {
+  background-color: black;
+  /* padding-left: 4px; */
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  right: 17px;
+  font-size: 17px;
+  font-weight: bold;
+  z-index: 2;
+  /* margin-left: 11px; */
+  margin-right: 3px;
   text-align: center;
-}
+} 
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* ********************************************************************  */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  column-gap: 20px;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.fixedpos{
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  background: #FF5F6D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+  width: 100%;
+  height: 60px;
+}
+.box {
+  background-color: white;
+  /* border: 4px solid black; */
+  box-shadow: 10px 10px 20px #7e6c6f;
+  padding: 10px;
+  text-align: center;
+  height: 350px;
+  width: 250px;
+  border-radius: 20px;
+  position: relative;
+  top: 310px;
+}
+li{
+  text-align: center;
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img{
+  height: 100px;
+  width: 100px;
 }
+
+h1{
+ font-style: italic;
+ letter-spacing: 5px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 7px;
+  text-shadow: 10px 5px 15px black;
+  color: #282626;
+}
+
+.slider{
+    
+  width : 100%;
+  height : 40%;
+  position : absolute;
+  margin-top: 5%;
+  background-image:url(https://www.apple.com/v/macbook-pro-13/p/images/overview/hero_endframe__bsza6x4fldiq_large_2x.jpg);
+  background-size : 100% 100%;
+  
+  box-shadow : 7px 5px  5px white;
+  animation : slider 12s infinite linear;
+}
+
+@keyframes slider {
+  0% { background-image:url(https://m.media-amazon.com/images/I/61+Om+g+8SL._SX3000_.jpg);}
+  25% {background-image : url(https://thumbs.dreamstime.com/b/males-fragrance-rectangular-glass-bottle-golden-perfume-standing-river-pebbles-bank-concept-perfumes-selective-241511209.jpg)}
+  50% {background-image :url(https://m.media-amazon.com/images/I/51ovs76vmtL._SX3000_.jpg)}
+  75% {background-image :url(  https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wearables/Unrec/GW/November/Unrec_DesktopTallHero_3000x1200._CB605565282_.jpg
+    )}
+  
+
+}
+.it-title{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.it-desc{
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+li img{
+  height :130px;
+  width: 150px;
+  border-radius: 20px;
+}
+.handicon img{
+  position: absolute;
+  top: 0px;
+  height: 60px;
+  width: 113px;
+  left: 177px;
+}
+
+ul:hover{
+  box-shadow: 20px 25px 20px rgb(25, 24, 24);
+  cursor: pointer;
+}
+.setHeightforlist{
+  height: 305px;
+}
+.it-rate{
+  font-weight: bold; 
+}
+.it-price{
+  font-weight: bold;
+
+}
+.linkIcon{
+  display: flex;
+  position: absolute;
+  top: 0px;
+  margin: 9px;
+  left: 290px;
+}
+.linkIcon li{
+  list-style: none;
+  padding: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+

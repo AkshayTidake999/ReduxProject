@@ -3,11 +3,27 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { useMemo } from "react";
+import '../node_modules/font-awesome/css/font-awesome.min.css'; 
+
+
+
+import {configureStore} from '@reduxjs/toolkit'
+import {Provider} from 'react-redux'
+import rootReducer from './Services/Reducer/index'
+
+const store = configureStore({
+ reducer: rootReducer
+})
+// console.log("Store ",store)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Provider store={store}>
     <App />
+    </Provider>
+   
   </React.StrictMode>
 );
 
